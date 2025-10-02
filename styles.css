@@ -241,6 +241,25 @@ p {
     font-weight: 500;
 }
 
+.hero-rating {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.rating-stars {
+    font-size: 16px;
+    color: var(--accent-gold);
+    line-height: 1;
+}
+
+.rating-text {
+    font-size: 14px;
+    color: var(--gray-medium);
+    font-weight: 500;
+}
+
 .headline {
     margin-bottom: var(--spacing-md);
     text-align: left;
@@ -1279,12 +1298,22 @@ p {
         font-size: 15px;
     }
 
+    /* Hide section CTAs on mobile - sticky footer is sufficient */
+    .section-cta,
+    .cta-section {
+        display: none;
+    }
+
     .hero {
         padding: var(--spacing-lg) 0;
     }
 
     .brand-tagline {
         text-align: center;
+    }
+
+    .hero-rating {
+        justify-content: center;
     }
 
     .pricing-hero {
