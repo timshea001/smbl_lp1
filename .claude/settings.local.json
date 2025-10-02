@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:the-smbl.co)",
+      "Read(//Users/timothyshea/Projects/gv_lp/**)",
+      "WebFetch(domain:www.pakaapparel.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
