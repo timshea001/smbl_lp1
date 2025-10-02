@@ -1199,6 +1199,10 @@ p {
         max-width: 100%;
     }
 
+    .hero-image {
+        order: -1;
+    }
+
     .headline {
         text-align: center;
     }
