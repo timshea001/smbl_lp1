@@ -418,6 +418,13 @@ p {
     background-color: var(--bone);
 }
 
+.quote-stars {
+    text-align: center;
+    font-size: 24px;
+    color: var(--accent-gold);
+    margin-bottom: var(--spacing-md);
+}
+
 .featured-quote {
     max-width: 800px;
     margin: 0 auto;
@@ -908,6 +915,12 @@ p {
     border-radius: 8px;
 }
 
+.testimonial-stars {
+    font-size: 16px;
+    color: var(--accent-gold);
+    margin-bottom: var(--spacing-sm);
+}
+
 .testimonial-text {
     font-size: 16px;
     line-height: 1.6;
@@ -1272,6 +1285,7 @@ p {
 
     .pricing-hero {
         justify-content: center;
+        align-items: baseline;
     }
 
     .price-sale {
