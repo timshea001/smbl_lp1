@@ -245,7 +245,7 @@ p {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 12px;
 }
 
 .rating-stars {
