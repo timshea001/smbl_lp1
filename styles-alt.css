@@ -837,5 +837,15 @@ img {
     /* Sticky CTA */
     .sticky-cta {
         display: block;
+        padding: 16px 20px;
+    }
+
+    .sticky-content {
+        gap: 16px;
+    }
+
+    .btn-compact {
+        padding: 14px 28px;
+        white-space: nowrap;
     }
 }
