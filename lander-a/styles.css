@@ -203,6 +203,34 @@
   text-align: center;
 }
 
+.color-swatches {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: var(--space-sm);
+}
+
+.color-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform var(--transition-base);
+  display: inline-block;
+}
+
+.color-swatch:hover {
+  transform: scale(1.2);
+}
+
+.product-eyebrow {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .product-name {
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
