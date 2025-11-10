@@ -31,7 +31,8 @@
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background: url('assets/images/hero-sunset-rocky.png') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('assets/images/hero-foundation.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +43,15 @@
   text-align: center;
   max-width: 800px;
   padding: 0 var(--container-padding-mobile);
+}
+
+.hero-eyebrow {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-sm);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hero-title {
@@ -62,6 +72,10 @@
   .hero {
     height: 70vh;
     min-height: 500px;
+  }
+
+  .hero-eyebrow {
+    font-size: var(--text-base);
   }
 
   .hero-title {
