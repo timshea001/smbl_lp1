@@ -32,7 +32,7 @@
   height: 80vh;
   min-height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('assets/images/hero-sunset-rocky-clean.png') center/cover no-repeat;
+    url('https://the-smbl.co/cdn/shop/files/attachment-2.png?v=1761757426&width=3840') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +93,8 @@
   .hero {
     height: 70vh;
     min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('https://the-smbl.co/cdn/shop/files/attachment-1.png?v=1761757521&width=3840') center/cover no-repeat;
   }
 
   .hero-eyebrow {
