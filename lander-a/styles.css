@@ -39,10 +39,31 @@
   color: white;
 }
 
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: linear-gradient(180deg, #EFA237 0%, #E85D5D 100%);
+  z-index: 1;
+}
+
+.hero::before {
+  left: 0;
+}
+
+.hero::after {
+  right: 0;
+}
+
 .hero-content {
+  position: relative;
   text-align: center;
   max-width: 800px;
   padding: 0 var(--container-padding-mobile);
+  z-index: 2;
 }
 
 .hero-eyebrow {
