@@ -94,6 +94,10 @@
   color: white;
 }
 
+.mobile-break {
+  display: none;
+}
+
 .hero-subtitle {
   font-size: var(--text-xl);
   margin-bottom: var(--space-xl);
@@ -107,6 +111,10 @@
     min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('https://the-smbl.co/cdn/shop/files/attachment-1.png?v=1761757521&width=3840') center/cover no-repeat;
+  }
+
+  .mobile-break {
+    display: inline;
   }
 
   .hero-eyebrow {
@@ -578,6 +586,13 @@
 .star-rating .rating-text {
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
+}
+
+.verified-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  vertical-align: middle;
 }
 
 .section-header .star-rating {
