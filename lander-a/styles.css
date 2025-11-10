@@ -3,13 +3,35 @@
  * SMBL Foundation Collection
  */
 
+/* Button Overrides - Gradient Buttons from Figma */
+.btn-accent {
+  background: linear-gradient(90deg, #EFA237 0%, #E85D5D 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  border-radius: 0;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-accent:hover {
+  background: linear-gradient(90deg, #d68b2a 0%, #c94545 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(239, 162, 55, 0.4);
+}
+
 /* Hero Section */
 .hero {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../assets/images/hero-collection.jpg') center/cover no-repeat;
+  background: url('assets/images/hero-sunset-rocky.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,6 +200,13 @@
   line-height: var(--leading-relaxed);
 }
 
+.product-rating {
+  margin-top: var(--space-xs);
+  color: var(--smbl-gold-accent);
+  font-size: var(--text-xs);
+  letter-spacing: 2px;
+}
+
 .product-details-link {
   display: block;
   text-align: center;
@@ -310,10 +339,18 @@
 /* Final CTA Section */
 .final-cta {
   padding: var(--space-3xl) 0;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('assets/images/hero-surfing.png') center/cover no-repeat;
+  color: white;
 }
 
 .final-cta h2 {
-  color: var(--color-text-primary);
+  color: white;
+}
+
+.final-cta p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .countdown-timer {
@@ -322,7 +359,7 @@
   gap: var(--space-md);
   font-size: var(--text-2xl);
   font-weight: var(--font-bold);
-  color: var(--color-sale-red);
+  color: var(--smbl-gold-accent);
 }
 
 .time-unit {
@@ -340,7 +377,7 @@
 .time-label {
   font-size: var(--text-sm);
   font-weight: var(--font-normal);
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.7);
   margin-top: var(--space-xs);
   text-transform: uppercase;
 }
@@ -348,7 +385,7 @@
 .time-separator {
   display: flex;
   align-items: center;
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .btn-large {
@@ -368,11 +405,11 @@
   align-items: center;
   gap: var(--space-xs);
   font-size: var(--text-sm);
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .trust-badge svg {
-  color: var(--color-success);
+  color: var(--smbl-gold-accent);
 }
 
 @media (max-width: 767px) {
