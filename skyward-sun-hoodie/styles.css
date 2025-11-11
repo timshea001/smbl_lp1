@@ -422,3 +422,16 @@ html {
 .review-card {
   cursor: pointer;
 }
+
+/* Review Title and Date Styling */
+.review-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.review-date {
+  font-size: var(--text-xs);
+  margin: 0;
+}
