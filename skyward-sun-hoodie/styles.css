@@ -318,10 +318,10 @@
   align-items: start;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .graphene-layout {
-    grid-template-columns: 42% 58%;
-    gap: var(--space-3xl);
+    grid-template-columns: 45% 55%;
+    gap: 60px;
   }
 }
 
@@ -337,224 +337,93 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Graphene Content Column */
 .graphene-content {
   display: flex;
   flex-direction: column;
 }
 
-/* Typography */
 .graphene-main-header {
-  font-size: clamp(28px, 4vw, 36px);
+  font-size: clamp(28px, 4vw, 40px);
   font-weight: var(--font-bold);
-  line-height: var(--leading-tight);
-  color: var(--color-text-primary);
-  margin-bottom: var(--space-sm);
-}
-
-.graphene-secondary-header {
-  font-size: clamp(22px, 3vw, 28px);
-  font-weight: var(--font-semibold);
+  line-height: 1.2;
   color: var(--color-text-primary);
   margin-bottom: var(--space-md);
 }
 
-.graphene-tertiary-header {
-  font-size: clamp(16px, 2vw, 20px);
-  font-weight: var(--font-normal);
-  color: var(--color-text-secondary);
-  margin-bottom: 40px;
-}
-
-/* Problem Box */
-.problem-box {
-  background: #F5F5F0;
-  padding: 30px;
-  border-radius: 8px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.problem-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 16px;
+.graphene-intro {
+  font-size: clamp(16px, 2vw, 19px);
   line-height: 1.6;
   color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
 }
 
-.problem-icon {
-  flex-shrink: 0;
-  font-size: 18px;
-  line-height: 1;
+/* Benefits Grid */
+.graphene-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
-.problem-item strong {
-  color: var(--color-text-primary);
-  font-weight: var(--font-semibold);
-}
-
-@media (max-width: 767px) {
-  .problem-box {
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-
-  .problem-item {
-    font-size: 15px;
+@media (min-width: 768px) {
+  .graphene-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
   }
 }
 
-/* Solution Box */
-.solution-box {
-  background: #E8F4F8;
-  padding: 30px;
-  border-radius: 8px;
-  margin-bottom: 50px;
-}
-
-.solution-box p {
-  font-size: clamp(15px, 2vw, 18px);
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-  margin: 0;
-}
-
-.solution-box strong {
-  color: var(--color-text-primary);
-  font-weight: var(--font-semibold);
-}
-
-@media (max-width: 767px) {
-  .solution-box {
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-}
-
-/* Benefits Section */
-.benefits-header {
-  font-size: clamp(18px, 2.5vw, 22px);
-  font-weight: var(--font-bold);
-  color: var(--color-text-primary);
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
-.benefits-list {
+.graphene-benefit {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  margin-bottom: 60px;
+  gap: var(--space-sm);
 }
 
-.benefit-item {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-}
-
-.benefit-icon {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.graphene-benefit svg {
   color: #D84315;
+  margin-bottom: var(--space-xs);
 }
 
-@media (max-width: 767px) {
-  .benefit-icon {
-    width: 36px;
-    height: 36px;
-  }
-
-  .benefit-icon svg {
-    width: 36px;
-    height: 36px;
-  }
-}
-
-.benefit-text {
-  flex: 1;
-}
-
-.benefit-title {
+.graphene-benefit h4 {
   font-size: 18px;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-semibold);
   color: var(--color-text-primary);
-  margin: 0 0 8px 0;
+  margin: 0;
   line-height: 1.3;
 }
 
-.benefit-tagline {
-  font-size: 16px;
-  font-weight: var(--font-semibold);
-  color: #D84315;
-  margin: 0 0 8px 0;
-  line-height: 1.4;
-}
-
-.benefit-description {
+.graphene-benefit p {
   font-size: 15px;
   line-height: 1.6;
   color: var(--color-text-secondary);
   margin: 0;
-  opacity: 0.85;
 }
 
-@media (max-width: 767px) {
-  .benefit-item {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .benefit-title {
-    font-size: 17px;
-  }
-
-  .benefit-tagline {
-    font-size: 15px;
-  }
-
-  .benefit-description {
-    font-size: 14px;
-  }
+/* Bottom Section */
+.graphene-bottom {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  padding-top: var(--space-lg);
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
-/* Closing Statement */
-.graphene-closing {
-  font-size: clamp(18px, 2.5vw, 24px);
-  font-weight: var(--font-bold);
+.graphene-statement {
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: var(--font-semibold);
   color: var(--color-text-primary);
-  letter-spacing: 0.5px;
-  text-align: left;
-  margin: 0 0 40px 0;
-  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5;
 }
 
-/* CTA Button */
-.graphene-cta {
-  width: 100%;
-  max-width: 400px;
-  height: 56px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: var(--font-bold);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 0;
+.graphene-bottom .btn {
+  width: fit-content;
+  align-self: flex-start;
 }
 
 @media (max-width: 767px) {
-  .graphene-cta {
-    max-width: 100%;
+  .graphene-bottom .btn {
+    width: 100%;
   }
 }
 
