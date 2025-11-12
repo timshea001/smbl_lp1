@@ -422,3 +422,14 @@ html {
 .review-card {
   cursor: pointer;
 }
+
+/* Review SMBL Response */
+.smbl-response {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm);
+  background: var(--color-bg-secondary);
+  border-left: 3px solid var(--smbl-gold-accent);
+  border-radius: 4px;
+  font-size: var(--text-sm);
+  font-style: italic;
+}
