@@ -95,6 +95,16 @@
   line-height: var(--leading-snug);
 }
 
+.product-subhead {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin: var(--space-sm) 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .product-pricing-hero {
   display: flex;
   align-items: center;
@@ -128,11 +138,24 @@
   line-height: var(--leading-relaxed);
   color: var(--color-text-primary);
   margin: var(--space-md) 0;
+  max-width: 100%;
+}
+
+.product-description-hero h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  margin: 0 0 var(--space-sm) 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .product-description-hero p {
-  margin: 0;
+  margin: 0 0 var(--space-sm) 0;
   font-size: var(--text-base);
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .product-badges-list {
