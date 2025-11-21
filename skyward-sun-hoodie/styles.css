@@ -47,6 +47,7 @@
 /* Hero Image Rollover Effect */
 .hero-image-rollover {
   position: relative;
+  width: 100%;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 8px;
@@ -54,11 +55,11 @@
 }
 
 .hero-image-rollover .main-product-image {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
   object-position: center top;
   border-radius: 8px;
